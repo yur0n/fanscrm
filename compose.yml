@@ -11,9 +11,9 @@ services:
       - DB_HOST=db
       - DB_PORT=3306
       - DB_USERNAME=root
-      - DB_PASSWORD=&I1QBg^C@Int
+      - DB_PASSWORD=password
       - DB_NAME=main
-      - JWT_SECRET=fanscrm-jwt-secret-key
+      - JWT_SECRET=secret
     depends_on:
       - db
     command: ["./wait-for-it.sh", "db:3306", "--timeout=60", "-s", "--", "npm", "run", "start:prod"]
@@ -23,5 +23,5 @@ services:
     image: mysql
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=&I1QBg^C@Int
+      - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=main

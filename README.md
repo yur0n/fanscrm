@@ -1,6 +1,6 @@
 ## Description
 
-This is a test project built with NestJS, designed to demonstrate basic CRUD operations and authentication.
+Nestjs basic CRUD operations and authentication
 
 ## Build and run the app
 
